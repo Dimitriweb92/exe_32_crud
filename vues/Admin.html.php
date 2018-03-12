@@ -2,12 +2,26 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>Accueil du site</title>
 </head>
 <body>
 <h1>site du l'admin</h1>
 
 <div id="contenu">
+=======
+    <title>Admin du site</title>
+</head>
+<body>
+<h1>Admin du site</h1>
+<div id="menu">
+    <a href="./">Retour sur l'accueil</a>
+</div>
+<div id="contenu">
+        <ul>
+            <li><a href="?admin&ajout">Ajouter un article</a></li>
+        </ul>
+>>>>>>> 15bc1cd096eaba534091e16e1853024b5659d809
     <?php
 
 
