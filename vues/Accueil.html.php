@@ -7,7 +7,9 @@
 <body>
 <h1>Accueil</h1>
 <div id="menu">
-    <a href="?admin">site de l'administration</a>
+
+    <a href="?admin">Administration des articles</a>
+
 </div>
 <div id="contenu">
     <?php
@@ -23,6 +25,11 @@
             <!-- ici le foreach pour les categ -->
             <p><?= $item['texte'] ?> ... <a href="?article=<?= $item['idarti'] ?>">Lire la suite</a></p>
             <p><?= $item['publie'] ?></p>
+            <img width="16px" height="16px" src="vues/img/uptade.png" alt="modifier l'article" onclick="document.location='?admin&modif=<?= $item['idarti'] ?>';"/>
+            <img width="16px" height="16px" src="vues/img/delete.png" alt="effacer l'article" onclick="document.location='?admin&delete=<?= $item['idarti'] ?>';"/>
+            <img width="16px" height="16px" src="vues/img/save.png" alt="sauvegarder l'article" onclick="document.location='?admin&save=<?= $item['idarti'] ?>';"/>
+            <img width="16px" height="16px" src="vues/img/create.png" alt="crée un nouvelle article" onclick="document.location='?admin&create=<?= $item['idarti'] ?>';"/>
+
             <hr>
             <?php
         }
